@@ -43,7 +43,16 @@ console.log('5. Adding 25 to supplyChanges.', )
 console.log('6. Showing supplyChanges...');
 
 for (x = 0; x < supplyChanges.length; x++){
-console.log(supplyChanges[x])
+    console.log(supplyChanges[x])//showing each value in the supplyChanges array. 
+    if(supplyChanges[x]==0) {
+        console.log("no change");//if result is 0
+    }
+    else if (supplyChanges[x] > 0){
+        console.log(`Added ${x} parts`);// if result is a positive #
+    }
+    else {
+        console.log(`Removed ${x} parts`);//if result is a negative #
+    }
 }
 
 
@@ -63,3 +72,4 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
